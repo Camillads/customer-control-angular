@@ -1,0 +1,22 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.content-card {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.content-form {
+    display: grid;
+}
+
+.botoes {
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 10% 10%;
+}

@@ -12,4 +12,11 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cancel(){
+
+  }
+
+  createProduct(){
+    
+  }
 }
