@@ -1,0 +1,17 @@
+.content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12% 70% 18%;
+    padding: 0% 5% 0% 5%;
+}
+
+.menu {
+}
+
+.main {
+    padding: 5% 5% 5% 5%;
+}
+
+.footer {
+
+}
