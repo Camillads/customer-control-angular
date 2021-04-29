@@ -16,6 +16,10 @@ import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment';
+
 const routes = RouterModule.forRoot(
   [
     { path: 'cadastro', component: CadastroComponent },
@@ -41,7 +45,9 @@ const routes = RouterModule.forRoot(
     RouterModule,
     BrowserAnimationsModule,
     routes,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
