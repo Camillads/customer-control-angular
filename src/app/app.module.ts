@@ -12,6 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { CadastroComponent } from './Components/cadastro/cadastro.component';
 import { MenuComponent } from './Components/menu/menu.component';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+
+const routes = RouterModule.forRoot(
+  [
+    { path: 'cadastro', component: CadastroComponent },
+    { path: 'clientes', component: ClientesComponent },  ]
+)
 
 @NgModule({
   declarations: [
@@ -28,9 +37,15 @@ import { MenuComponent } from './Components/menu/menu.component';
     MatInputModule,
     MatButtonModule,
     MatMenuModule,
-    BrowserAnimationsModule
+    MatListModule,
+    RouterModule,
+    BrowserAnimationsModule,
+    routes,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

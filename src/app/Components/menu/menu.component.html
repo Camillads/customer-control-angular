@@ -5,17 +5,17 @@
 
     <div class="content-menu">
         <div class="option-menu">
-            <button mat-button>HOME</button>
+            <button mat-button routerLink="/"> HOME </button>
         </div>
         <div class="option-menu">
-            <button mat-button [matMenuTriggerFor]="menu">CADASTRO</button>
+            <button mat-button [matMenuTriggerFor]="menu" routerLink="/cadastro"> CADASTRO </button>
             <mat-menu #menu="matMenu">
                 <button mat-menu-item>Item 1</button>
                 <button mat-menu-item>Item 2</button>
             </mat-menu>
         </div>
         <div class="option-menu">
-            <button mat-button [matMenuTriggerFor]="menu">LISTAGEM</button>
+            <button mat-button [matMenuTriggerFor]="menu" routerLink="/clientes">LISTAGEM</button>
             <mat-menu #menu="matMenu">
                 <button mat-menu-item>Item 1</button>
                 <button mat-menu-item>Item 2</button>

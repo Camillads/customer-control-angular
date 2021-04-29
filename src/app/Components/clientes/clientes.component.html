@@ -1,19 +1,11 @@
-<mat-card>
-    <mat-card-title> Cadastro de clientes </mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput placeholder="Nome">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Preço">
-        </mat-form-field>
-    </form>
-</mat-card>
+<div class="content">
+    <mat-card>
+        <mat-card-title> Lista de clientes </mat-card-title>
+        <mat-list>
+            <mat-list-item> Pepper </mat-list-item>
+            <mat-list-item> Salt </mat-list-item>
+            <mat-list-item> Paprika </mat-list-item>
+        </mat-list>
+    </mat-card>
+</div>
     
-<button mat-raised-button (click)="createProduct()" color="primary">
-    Salvar
-</button>
-
-<button mat-raised-button (click)="cancel()">
-    Cancelar
-</button>
