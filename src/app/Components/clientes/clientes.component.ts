@@ -25,6 +25,5 @@ export class ClientesComponent implements OnInit {
 
   edit(cliente: Cliente, key: string) {
     this.clienteDataService.changeCliente(cliente, key);
-    window.location.href = "/cadastro";
   }
 }

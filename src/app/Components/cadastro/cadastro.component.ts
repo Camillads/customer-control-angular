@@ -16,7 +16,6 @@ export class CadastroComponent implements OnInit {
               private clienteDataService: ClienteDataService) { }
 
   ngOnInit(): void {
-    debugger
     this.cliente = new Cliente();
 
     this.clienteDataService.currentCliente.subscribe(data => {
@@ -32,7 +31,6 @@ export class CadastroComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger
     if (this.key) {
       this.clienteService.update(this.cliente, this.key);
     }
