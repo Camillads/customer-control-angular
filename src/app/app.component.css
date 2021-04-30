@@ -11,6 +11,7 @@
 .main {
     background-color: #B8BE14;
     padding: 3% 05% 3% 5%;
+    overflow: auto;
 }
 
 .footer {
