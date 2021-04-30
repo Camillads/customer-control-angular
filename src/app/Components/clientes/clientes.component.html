@@ -4,10 +4,30 @@
         <div class="content-card" *ngFor="let cliente of clientes | async">
             <div class="content-list">
                 <mat-list>
-                    <mat-list-item><b>Nome completo:</b>  {{cliente.nome}} </mat-list-item>
-                    <mat-list-item><b>Email:</b>  {{cliente.email}} </mat-list-item>
-                    <mat-list-item><b>Telefone:</b>  {{cliente.telefone}} </mat-list-item>
-                    <mat-list-item><b>Data de nascimento:</b>  {{cliente.data_nascimento}} </mat-list-item>
+                    <mat-list-item>
+                        <div class="item-list">
+                            <div class="titulo"> Nome completo: </div> 
+                            <div class="descricao"> {{cliente.nome}} </div>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <div class="item-list">
+                            <div class="titulo"> Email: </div>
+                            <div class="descricao"> {{cliente.email}} </div>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <div class="item-list">
+                            <div class="titulo"> Telefone: </div>
+                            <div class="descricao"> {{cliente.telefone}} </div>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <div class="item-list">
+                            <div class="titulo"> Data de nascimento:</div>
+                            <div class="descricao"> {{cliente.data_nascimento}} </div>
+                        </div>
+                    </mat-list-item>
                 </mat-list>
                 <hr>
             </div>

@@ -4,6 +4,16 @@
     grid-template-columns: 90% 10%;
 }
 
+.item-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
 .botao {
     padding-top: 5%;
     padding-bottom: 5%;
