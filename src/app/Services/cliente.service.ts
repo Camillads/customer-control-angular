@@ -25,16 +25,16 @@ export class ClienteService {
   }
 
   getAll() {
-    return this.db.list('contato')
+    return this.db.list('cliente')
       .snapshotChanges()
       .pipe(
         map(changes => {
-          return changes.map(c => ({ key: c.payload.key, ...c.payload.val }));
+          return changes.map(c => ({ key: c.payload.key, ...c.payload.exportVal() }));
         })
       );
   }
 
   delete(key: string){
-    this.db.object(`contato/${key}`).remove();
+    this.db.object(`cliente/${key}`).remove();
   }
 }

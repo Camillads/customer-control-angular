@@ -1,0 +1,11 @@
+.content-card {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 90% 10%;
+}
+
+.botao {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+

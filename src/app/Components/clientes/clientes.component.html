@@ -1,11 +1,19 @@
 <div class="content">
-    <mat-card>
-        <mat-card-title> Lista de clientes </mat-card-title>
-        <mat-list>
-            <mat-list-item> Pepper </mat-list-item>
-            <mat-list-item> Salt </mat-list-item>
-            <mat-list-item> Paprika </mat-list-item>
-        </mat-list>
+    <mat-card class="content-card" *ngFor="let cliente of clientes | async">
+        <div class="content-list">
+            <mat-card-title> Lista de clientes </mat-card-title>
+            <mat-list>
+                <mat-list-item>Nome: {{cliente.nome}} </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="botoes">
+            <div class="botao">
+                <button mat-raised-button color="primary" (click)="edit(cliente, cliente.key)">Editar</button>
+            </div>
+            <div class="botao">
+                <button mat-raised-button color="warn" class="botao" (click)="delete(cliente.key)">Excluir</button>
+            </div>
+        </div>
     </mat-card>
 </div>
     

@@ -1,33 +1,24 @@
-<div class="content">
-    <div class="content-cadastro">
-        <mat-card class="content-card">
-            <mat-card-title> Cadastro de clientes </mat-card-title>
-            <form class="content-form" (ngSubmit)="onSubmit()">
-                <mat-form-field>
-                    <input type="text" matInput [(ngModel)]="cliente.nome" name="nome" placeholder="Nome completo">
-                </mat-form-field>
-                <mat-form-field>
-                    <input type="text" matInput [(ngModel)]="cliente.email" name="nome" placeholder="Email">
-                </mat-form-field>
-                <mat-form-field>
-                    <input type="text" matInput [(ngModel)]="cliente.telefone" name="nome" placeholder="Telefone">
-                </mat-form-field>
-                <mat-form-field>
-                    <input type="text" matInput [(ngModel)]="cliente.data_nascimento" name="nome" placeholder="Data de nascimento">
-                </mat-form-field>
-            </form>
-        </mat-card>
-    </div>
-    <div class="botoes">
+<mat-card class="content-card">
+    <mat-card-title> Cadastro de clientes </mat-card-title>
+    <form class="content-form" (ngSubmit)="onSubmit()">
+        <div class="dados">
+            <mat-form-field>
+                <input type="text" matInput [(ngModel)]="cliente.nome" name="nome" placeholder="Nome completo">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput [(ngModel)]="cliente.email" name="email" placeholder="Email">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput [(ngModel)]="cliente.telefone" name="telefone" placeholder="Telefone">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput [(ngModel)]="cliente.data_nascimento" name="data_nascimento" placeholder="Data de nascimento">
+            </mat-form-field>
+        </div>
         <div class="botao">
             <button mat-raised-button type="submit" color="primary">
                 Salvar
             </button>
         </div>
-        <div class="botao">
-            <button mat-raised-button (click)="cancel()">
-                Cancelar
-            </button>
-        </div>
-    </div>
-</div>
+    </form>
+</mat-card>
